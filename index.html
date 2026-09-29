@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Waypoint Creative &amp; Marketing</title>
+<meta name="description" content="Waypoint Creative &amp; Marketing: branding, social media, email marketing and marketing material for businesses that want to be found and remembered.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#03146B;--navy-2:#0A2286;--blue:#0B3DFF;--white:#fff;--pale:#C9D4FF;
+--display:'Anton','Impact','Arial Narrow',sans-serif;--body:'Work Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--navy);color:var(--white);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55;background:repeating-linear-gradient(72deg,transparent 0 78px,var(--navy-2) 78px 79px),repeating-linear-gradient(-8deg,transparent 0 96px,var(--navy-2) 96px 97px)}
+main,header,footer{position:relative;z-index:1}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--white);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(3,20,107,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--navy-2)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.logo{font-family:var(--display);font-size:26px;letter-spacing:.5px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo svg{width:20px;height:26px}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:15px;font-weight:500}
+nav ul a{text-decoration:none;color:var(--pale);padding:6px 0;border-bottom:2px solid transparent}
+nav ul a:hover{color:var(--white)}nav ul a.cur{color:var(--white);border-color:var(--blue)}
+.btn{display:inline-block;background:var(--white);color:var(--navy);text-decoration:none;padding:14px 26px;border-radius:4px;border:0;font:600 16px var(--body);cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--pale)}.btn.blue{background:var(--blue);color:var(--white)}.btn.blue:hover{background:#2a55ff}
+.btn.ghost{background:transparent;color:var(--white);box-shadow:inset 0 0 0 2px var(--white)}.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.page{display:none}.page.on{display:block}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-transform:uppercase;margin:0}
+h1{font-size:clamp(52px,11vw,132px);line-height:.98;letter-spacing:.5px;margin-bottom:28px}
+h1.sm{font-size:clamp(46px,8vw,92px)}
+h2{font-size:clamp(36px,5.5vw,60px);line-height:1;margin-bottom:36px}
+.hero{padding:88px 0 40px}
+.lead{max-width:34em;font-size:clamp(18px,2.2vw,21px);color:var(--pale);margin:0 0 32px}
+.route{width:100%;height:auto;display:block;margin-top:34px;overflow:visible}
+.route path{fill:none;stroke:var(--blue);stroke-width:4;stroke-linecap:round;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.4s .3s cubic-bezier(.6,.05,.3,1) forwards}
+.route .dot{fill:var(--white)}.route .pin{opacity:0;animation:pop .5s 2.5s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes pop{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.route path{animation:none;stroke-dashoffset:0}.route .pin{animation:none;opacity:1}}
+section{padding:76px 0}
+.head{padding:72px 0 8px}
+.list{list-style:none;margin:0;padding:0;border-top:2px solid var(--blue)}
+.list li{display:grid;grid-template-columns:minmax(200px,1fr) 2fr;gap:12px 32px;padding:26px 0;border-bottom:1px solid var(--navy-2)}
+.list h3{font-size:30px;letter-spacing:.3px}.list h3 a{text-decoration:none}
+.list p{margin:0;color:var(--pale);max-width:38em}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px;counter-reset:s;list-style:none;margin:0;padding:0}
+.steps li{counter-increment:s}.steps li::before{content:counter(s);display:block;font-family:var(--display);font-size:72px;line-height:1;color:var(--blue)}
+.steps h3{font-size:28px;margin:6px 0 4px}.steps p{margin:0;color:var(--pale)}
+.band{background:var(--blue);padding:52px 0}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.band h2{font-size:clamp(30px,4vw,44px);margin:0 0 6px}.band p{margin:0;max-width:34em;color:#E4EAFF}
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:16px 56px;padding:44px 0;border-top:2px solid var(--blue)}
+.svc h2{margin:0}.svc p{color:var(--pale);margin:0 0 16px}
+.svc ul{margin:0;padding:0;list-style:none;border-top:1px solid var(--navy-2)}
+.svc li{padding:11px 0;border-bottom:1px solid var(--navy-2)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.two p{color:var(--pale);margin:0 0 18px;max-width:34em}
+.swatches{display:flex;gap:0;margin:24px 0}
+.swatches div{flex:1;padding:44px 14px 12px;font-size:13px;font-weight:600}
+.type{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--navy-2)}
+.type div{padding:22px}.type div+div{border-left:1px solid var(--navy-2)}
+.type b{display:block;font-family:var(--display);font-weight:400;font-size:44px;line-height:1.1}
+.type span{color:var(--pale);font-size:14px}
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}
+form{display:grid;gap:16px}
+label{font-size:14px;font-weight:600;color:var(--pale);display:grid;gap:6px}
+input,select,textarea{font:400 16px var(--body);color:var(--white);background:rgba(255,255,255,.07);border:1px solid #3a52b8;border-radius:4px;padding:13px 14px;width:100%}
+select option{color:#000}input::placeholder,textarea::placeholder{color:#8fa1e8}textarea{min-height:120px;resize:vertical}
+.note{font-size:14px;color:var(--pale);margin:0}
+.details{line-height:1.9;color:var(--pale)}.details a{color:var(--white)}
+details{border-bottom:1px solid var(--navy-2);padding:16px 0}details:first-of-type{border-top:2px solid var(--blue)}
+summary{cursor:pointer;font-weight:600;font-size:18px}details p{color:var(--pale);margin:10px 0 0;max-width:40em}
+footer{border-top:1px solid var(--navy-2);padding:44px 0}
+.foot{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;color:var(--pale);font-size:15px}
+.foot .logo{font-size:34px;color:var(--white)}.foot ul{list-style:none;margin:0;padding:0;line-height:2}.foot a{text-decoration:none}.foot a:hover{color:var(--white)}
+@media (max-width:760px){nav ul{order:3;width:100%;overflow-x:auto;gap:22px;padding-bottom:8px}nav>.btn{display:none}.list li,.svc,.two,.contact{grid-template-columns:1fr;gap:20px}section{padding:56px 0}.hero{padding-top:52px}.swatches div{padding-top:28px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+  <a class="logo" href="#home" aria-label="Waypoint home"><svg viewBox="0 0 20 26" aria-hidden="true"><path fill="#fff" d="M10 0C4.5 0 0 4.4 0 9.8 0 17 10 26 10 26s10-9 10-16.2C20 4.4 15.5 0 10 0zm0 13.6a3.8 3.8 0 110-7.6 3.8 3.8 0 010 7.6z"/></svg>WAYPOINT</a>
+  <ul><li><a data-nav="home" href="#home">Home</a></li><li><a data-nav="services" href="#services">Services</a></li><li><a data-nav="work" href="#work">Work</a></li><li><a data-nav="about" href="#about">About</a></li><li><a data-nav="contact" href="#contact">Contact</a></li></ul>
+  <a class="btn" href="#contact">Start a project</a>
+</nav></div></header>
+
+<main>
+<!-- HOME -->
+<div class="page" id="p-home" data-title="Waypoint Creative &amp; Marketing">
+  <div class="wrap hero">
+    <h1>Let's put your brand on the map.</h1>
+    <p class="lead">Waypoint is a creative and marketing studio. We design brands, run social content, build email campaigns and make the marketing material that gets your business noticed.</p>
+    <div class="actions"><a class="btn" href="#services">See our services</a><a class="btn ghost" href="#contact">Start a project</a></div>
+    <svg class="route" viewBox="0 0 1000 150" role="img" aria-label="A route line ending in a location pin">
+      <path d="M4 110 C130 130 230 60 340 96 C450 132 520 40 640 50 C740 58 800 104 880 78 C930 62 940 46 960 36"/>
+      <circle class="dot" cx="4" cy="110" r="6"/><circle class="dot" cx="340" cy="96" r="6"/><circle class="dot" cx="640" cy="50" r="6"/>
+      <g class="pin" transform="translate(960 30)"><path fill="#fff" d="M0-28c-13 0-24 10.500-24 23.500C-24 12 0 34 0 34s24-22 24-38.500C24-17.500 13-28 0-28zm0 32a8.500 8.500 0 110-17 8.500 8.500 0 010 17z"/></g>
+    </svg>
+  </div>
+  <section><div class="wrap"><h2>What we do</h2>
+    <ul class="list">
+      <li><h3><a href="#services">Branding</a></h3><p>Logos, colour, type and guidelines that make your business easy to recognise and remember.</p></li>
+      <li><h3><a href="#services">Social media</a></h3><p>Post designs, templates and content plans that keep every channel looking like one business.</p></li>
+      <li><h3><a href="#services">Email marketing</a></h3><p>Branded templates and campaigns, written and designed to be opened, read and clicked.</p></li>
+      <li><h3><a href="#services">Marketing material</a></h3><p>Flyers, brochures, decks and print-ready assets for the moments you need to stand out.</p></li>
+    </ul></div></section>
+  <section style="padding-top:0"><div class="wrap"><h2>How we work</h2>
+    <ol class="steps">
+      <li><h3>Listen</h3><p>We start with your business, your customers and what you want to change.</p></li>
+      <li><h3>Design</h3><p>We create a clear direction and share it early, so you can shape it.</p></li>
+      <li><h3>Deliver</h3><p>You get finished, ready-to-use files and the guidance to use them well.</p></li>
+    </ol></div></section>
+  <div class="band"><div class="wrap"><div><h2>Founding client places</h2><p>We're new, and we're choosing our first five clients. Each gets a free starter project.</p></div><a class="btn" href="#contact">Claim a place</a></div></div>
+</div>
+
+<!-- SERVICES -->
+<div class="page" id="p-services" data-title="Services | Waypoint">
+  <div class="wrap head"><h1 class="sm">Services</h1><p class="lead">Everything your business needs to look consistent and get noticed, from the first logo to the last email.</p></div>
+  <div class="wrap">
+    <div class="svc"><div><h2>Branding</h2><p>Your brand is how people recognise you before you say a word. We build an identity you can use everywhere.</p></div>
+      <ul><li>Logo and wordmark</li><li>Colour palette and typography</li><li>Brand guidelines</li><li>Profile images and brand assets</li></ul></div>
+    <div class="svc"><div><h2>Social media</h2><p>Consistent, good-looking posts make your business look established, and make posting easier.</p></div>
+      <ul><li>Post and story templates</li><li>Content ideas and planning</li><li>Highlight covers and profile styling</li><li>Captions written in your voice</li></ul></div>
+    <div class="svc"><div><h2>Email marketing</h2><p>Email reaches people who already care. We make it look like you and give it a clear job.</p></div>
+      <ul><li>Branded email templates</li><li>Campaign copy and design</li><li>Welcome and follow-up emails</li><li>Newsletter layouts</li></ul></div>
+    <div class="svc"><div><h2>Marketing material</h2><p>Print and digital pieces that carry your brand into the real world.</p></div>
+      <ul><li>Flyers and posters</li><li>Brochures and one-pagers</li><li>Business cards and stationery</li><li>Presentation decks</li></ul></div>
+  </div>
+  <div class="band"><div class="wrap"><div><h2>Not sure what you need?</h2><p>Tell us about your business and we'll suggest where to start.</p></div><a class="btn" href="#contact">Talk to us</a></div></div>
+</div>
+
+<!-- WORK -->
+<div class="page" id="p-work" data-title="Work | Waypoint">
+  <div class="wrap head"><h1 class="sm">Work</h1><p class="lead">We've just launched, so our client portfolio starts here. The first project is our own identity.</p></div>
+  <section style="padding-top:36px"><div class="wrap two">
+    <div><h2>The Waypoint identity</h2>
+      <p>A waypoint is a point on a route that shows you're heading the right way. Our identity is built on that idea: a pin that marks the destination, a route line that connects the steps, and a bold wordmark that is easy to recognise.</p>
+      <p>Electric blue on deep navy gives it energy without losing clarity, and a strict grid keeps everything balanced.</p></div>
+    <div>
+      <div class="swatches"><div style="background:#03146B;box-shadow:inset 0 0 0 1px #3a52b8">Navy<br>#03146B</div><div style="background:#0B3DFF">Electric blue<br>#0B3DFF</div><div style="background:#fff;color:#03146B">White<br>#FFFFFF</div></div>
+      <div class="type"><div><b>Aa</b><span>Anton, for headlines and the wordmark</span></div><div><b style="font-family:var(--body);font-weight:400">Aa</b><span>Work Sans, for body text</span></div></div>
+    </div></div></section>
+  <div class="band"><div class="wrap"><div><h2>Your project could be next</h2><p>Our first five client projects will be featured here.</p></div><a class="btn" href="#contact">Start a project</a></div></div>
+</div>
+
+<!-- ABOUT -->
+<div class="page" id="p-about" data-title="About | Waypoint">
+  <div class="wrap head"><h1 class="sm">About</h1><p class="lead">Waypoint Creative &amp; Marketing is a young studio, founded by Oliver Ayres, that helps businesses look sharp and get noticed.</p></div>
+  <section style="padding-top:36px"><div class="wrap two">
+    <div><h2>Why Waypoint</h2><p>Too many good businesses are held back by branding and marketing that doesn't reflect the quality of what they do. We started Waypoint to fix that, with clear design, consistent messaging and marketing you can use straight away.</p><p>We're new, and that means we're focused. Every client gets direct attention and work we're proud to put our name to.</p></div>
+    <div><h2>What we believe</h2>
+      <ul class="list"><li style="grid-template-columns:1fr"><h3>Clear beats clever</h3><p>If people don't understand it quickly, it isn't working.</p></li>
+      <li style="grid-template-columns:1fr"><h3>Consistency builds trust</h3><p>Every touchpoint should look and sound like the same business.</p></li>
+      <li style="grid-template-columns:1fr"><h3>Work you can use</h3><p>Finished files, in the formats you need, with guidance on how to use them.</p></li></ul></div>
+  </div></section>
+</div>
+
+<!-- CONTACT -->
+<div class="page" id="p-contact" data-title="Contact | Waypoint">
+  <div class="wrap head"><h1 class="sm">Contact</h1><p class="lead">Tell us about your business and what you'd like to achieve. We'll reply with next steps.</p></div>
+  <section style="padding-top:36px"><div class="wrap contact">
+    <div><h2 style="font-size:40px">Get in touch</h2>
+      <p class="details">Oliver Ayres<br><a href="mailto:waypoint.creativeuk@gmail.com">waypoint.creativeuk@gmail.com</a><br><a href="tel:+447718262504">07718 262504</a></p>
+      <p class="note" style="margin-top:22px">Founding client places: our first five clients each receive a free starter project. Choose it in the form.</p></div>
+    <form id="f">
+      <label>Your name<input name="name" required autocomplete="name"></label>
+      <label>Business name<input name="biz" required autocomplete="organization"></label>
+      <label>What are you interested in?<select name="pick"><option>Free founding-client starter project</option><option>Branding</option><option>Social media</option><option>Email marketing</option><option>Marketing material</option><option>Not sure yet</option></select></label>
+      <label>Tell us about your business<textarea name="msg" placeholder="A sentence or two is plenty."></textarea></label>
+      <button class="btn blue" type="submit">Send enquiry</button>
+      <p class="note">This opens your email app with your enquiry filled in.</p>
+    </form></div></section>
+  <section style="padding-top:0"><div class="wrap"><h2>Questions</h2>
+    <details><summary>How much does it cost?</summary><p>It depends on what you need. Every project starts with a conversation, then a clear quote. Our first five clients receive a free starter project.</p></details>
+    <details><summary>What is the free starter project?</summary><p>A small piece of real work: a five-post social pack, a branded email template, or a one-page brand review. There's no cost and no obligation to work with us afterwards.</p></details>
+    <details><summary>How long does a project take?</summary><p>Starter projects are delivered within 7 days. Larger projects such as a full brand identity take longer, and we'll agree the timeline up front.</p></details>
+    <details><summary>What do I receive at the end?</summary><p>Finished files in the formats you need, ready to use, plus guidance on using them.</p></details>
+  </div></section>
+</div>
+</main>
+
+<footer><div class="wrap foot">
+  <div><span class="logo">WAYPOINT</span><br>Creative &amp; Marketing</div>
+  <ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+  <div class="details"><a href="mailto:waypoint.creativeuk@gmail.com">waypoint.creativeuk@gmail.com</a><br><a href="tel:+447718262504">07718 262504</a></div>
+</div></footer>
+
+<script>
+var EMAIL="waypoint.creativeuk@gmail.com";
+function show(){var h=(location.hash||"#home").slice(1),el=document.getElementById("p-"+h);if(!el){h="home";el=document.getElementById("p-home")}
+document.querySelectorAll(".page").forEach(function(p){p.classList.toggle("on",p===el)});
+document.querySelectorAll("[data-nav]").forEach(function(a){a.classList.toggle("cur",a.dataset.nav===h)});
+var t=document.createElement("div");t.innerHTML=el.dataset.title;document.title=t.textContent;window.scrollTo(0,0)}
+window.addEventListener("hashchange",show);show();
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();var d=new FormData(e.target);
+var body="Name: "+d.get("name")+"\nBusiness: "+d.get("biz")+"\nInterested in: "+d.get("pick")+"\n\n"+(d.get("msg")||"");
+location.href="mailto:"+EMAIL+"?subject="+encodeURIComponent("Enquiry from "+d.get("biz"))+"&body="+encodeURIComponent(body)});
+</script>
+</body>
+</html>
